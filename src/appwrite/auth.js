@@ -29,7 +29,7 @@ export class AuthService {
     try{
       return await this.account.createEmailPasswordSession(email, password);
     } catch (error){
-        console.log("appwrite service logout error ", error)
+        console.log("appwrite service login error ", error)
     }
   }
 
@@ -45,12 +45,10 @@ export class AuthService {
     try{
      return await this.account.get();
     } catch (error){
-        throw error;
+      console.log("appwrite service getCurrentUser error ", error)
     }
     return null;
   }
-
-  
 
 }
 
