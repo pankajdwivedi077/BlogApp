@@ -50,6 +50,17 @@ export class AuthService {
     return null;
   }
 
+  // async getCurrentUser() {
+  //   try {
+  //     const user = await appwrite.account.get();
+  //     return user;
+  //   } catch (error) {
+  //     console.error("User is not logged in:", error.message);
+  //     return null;
+  //   }
+  // }
+  
+
 }
 
 const authService = new AuthService();
